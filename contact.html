@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+<sergey-import src="ga" />
+
+<title>Video Hub App 2 - Contact</title>
+
+<sergey-import src="socialMeta" />
+
+<sergey-import src="favicon" />
+
+<sergey-import src="cssImports" />
+
+<sergey-import src="modernizr" />
+
+  <style>
+    h3 {
+      text-align: center;
+    }
+
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea,
+    #fs-frm fieldset,
+    #fs-frm optgroup,
+    #fs-frm label {
+      font-family: inherit;
+      font-size: 100%;
+      color: inherit;
+      border: none;
+      border-radius: 0;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    #fs-frm label,
+    #fs-frm legend {
+      font-size: .825em;
+      margin-bottom: .5em;
+    }
+
+    /* border, padding, margin, width */
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm button,
+    #fs-frm textarea {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: .75em 1em;
+      margin-bottom: 1.5em;
+    }
+
+    #fs-frm input:focus,
+    #fs-frm select:focus,
+    #fs-frm textarea:focus {
+      background-color: white;
+      outline-style: solid;
+      outline-width: thin;
+      outline-color: gray;
+      outline-offset: -1px;
+    }
+
+    #fs-frm [type="text"],
+    #fs-frm [type="email"] {
+      width: 100%;
+    }
+
+    #fs-frm button,
+    #fs-frm [type="button"],
+    #fs-frm [type="submit"],
+    #fs-frm [type="reset"] {
+      width: auto;
+      cursor: pointer;
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+    }
+
+    #fs-frm button:focus,
+    #fs-frm [type="button"]:focus,
+    #fs-frm [type="submit"]:focus,
+    #fs-frm [type="reset"]:focus {
+      outline: none;
+    }
+
+    #fs-frm [type="submit"],
+    #fs-frm [type="reset"] {
+      margin-bottom: 0;
+    }
+
+    #fs-frm button,
+    #fs-frm select {
+      text-transform: none;
+    }
+
+    /* address, locale */
+    #fs-frm fieldset.locale input[name="city"],
+    #fs-frm fieldset.locale select[name="state"],
+    #fs-frm fieldset.locale input[name="postal-code"] {
+      display: inline;
+    }
+
+    #fs-frm fieldset.locale input[name="city"] {
+      width: 52%;
+    }
+
+    #fs-frm fieldset.locale select[name="state"],
+    #fs-frm fieldset.locale input[name="postal-code"] {
+      width: 20%;
+    }
+
+    #fs-frm fieldset.locale input[name="city"],
+    #fs-frm fieldset.locale select[name="state"] {
+      margin-right: 3%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="perspective" class="perspective effect-moveleft">
+
+    <div class="containerNAV">
+
+      <div class="wrapper" id="clickHack">
+
+
+        <div class="fh5co-loader"></div>
+
+        <div class="vh-logo" style="
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 100;
+              ">
+          <a href="index.html"><img src="images/logo.png" style="width: 10vw"></a>
+        </div>
+
+        <button id="showMenu" class="hamburger hamburger--arrow-r" style="
+                  background-color: white;
+                  border-radius: 33px;
+                  border: 0;
+                  outline: none;
+                  padding: 20px 12px 11px;
+                  position: fixed;
+                  right: 16px;
+                  top: 6px;
+                  z-index: 10;
+                ">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div id="fh5co-page">
+
+          <!-- END #fh5co-hero -->
+
+          <div id="fh5co-faqs" name="faq">
+            <div class="container">
+              <div class="row row-bottom-padded-lg">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <h2 class="fh5co-lead animate-box">Contact</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Questions?</h2>
+                      <h2>Comments?</h2>
+                      <h2>Feature request?</h2>
+                      <h2>Bug report?</h2>
+                    </li>
+                  </ul>
+                  <hr>
+                </div>
+
+                <div class="animate-box col-md-8 col-md-offset-2">
+
+                  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                    action="https://formspree.io/boris@videohubapp.com" method="post">
+                    <fieldset id="fs-frm-inputs">
+
+                      <label for="reason">Please choose reason for reaching out:</label>
+                      <select name="reason" id="reason" required="">
+                        <option value="bug">Bug report<br>
+                        <option value="request">Feature request<br>
+                        <option value="lostlink">Lost my download link<br>
+                        <option value="other" selected>Other<br>
+                      </select>
+
+                      <label for="email-address">Email Address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="name@email.com" required="">
+
+                      <label for="message">Message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<sergey-import src="footer" />
+
+        </div>
+
+      </div><!-- /main -->
+
+    </div><!-- wrapper -->
+
+    <nav class="outer-nav right vertical">
+      <a href="index.html" class="my-icon-home">Home</a>
+      <a href="download.html" class="my-icon-download">Download</a>
+      <a href="share.html" class="my-icon-heart">Share</a>
+      <a href="blog.html" class="my-icon-news">Blog</a>
+      <a href="faq.html" class="my-icon-star">FAQ</a>
+      <a href="about.html" class="my-icon-info-large">About</a>
+      <a href="javascript:document.getElementById('clickHack').click()" class="current-page my-icon-mail">Contact</a>
+<sergey-import src="navigationShare" />
+    </nav>
+
+  </div><!-- /perspective -->
+
+
+<sergey-import src="bottomJS" />
+
+
+</body>
+
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+<sergey-import src="ga" />
+
+<title>Video Hub App 2 - Blog</title>
+
+<sergey-import src="socialMeta" />
+
+<sergey-import src="favicon" />
+
+<sergey-import src="cssImports" />
+
+<sergey-import src="modernizr" />
+
+  <style>
+    .light {
+      opacity: 0.6;
+    }
+
+    .soon {
+      color: #337ab7;
+    }
+
+    span.head {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    span.line {
+      display: block;
+      margin: 0 0 0 30px;
+    }
+
+    small {
+      opacity: 0.7;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="perspective" class="perspective effect-moveleft">
+
+    <div class="containerNAV">
+
+      <div class="wrapper" id="clickHack">
+
+
+        <div class="fh5co-loader"></div>
+
+        <div class="vh-logo" style="
+              position: fixed;
+              top: 10px;
+              left: 10px;
+              z-index: 100;
+            ">
+          <a href="index.html"><img src="images/logo.png" style="width: 10vw"></a>
+        </div>
+
+        <button id="showMenu" class="hamburger hamburger--arrow-r" style="
+                background-color: white;
+                border-radius: 33px;
+                border: 0;
+                outline: none;
+                padding: 20px 12px 11px;
+                position: fixed;
+                right: 16px;
+                top: 6px;
+                z-index: 10;
+              ">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div id="fh5co-page">
+
+          <!-- END #fh5co-hero -->
+
+          <div id="fh5co-faqs" name="faq">
+            <div class="container">
+              <div class="row row-bottom-padded-lg">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <h2 class="fh5co-lead animate-box">Blog / Changelog</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>October 12, 2019 🎉</h2>
+                      <h5 class="soon">v2.0.0</h5>
+
+                      <span class="head">Version 2.0.0 released</span>
+                      <br>
+                      <span class="head">New features:</span>
+                      <span class="line">Tags 🎉 add your own tags to any video</span>
+                      <span class="line">Choose number of screenshots per video</span>
+                      <span class="line">Sheet view: view every screenshot from a video</span>
+                      <span class="line">Optionally extract video clip preview</span>
+                      <span class="line">Folder navigation</span>
+                      <span class="line">Sort by date added, number of times played, star rating, file size, file name</span>
+                      <span class="line">Replace any video thumbnail by dropping an image over the preview</span>
+                      <span class="line">Option to open video from the screenshot you click</span>
+                      <span class="line">Duplicate finder</span>
+                      <span class="line">Hub statistics</span>
+                      <span class="line">Options menu grouped into sections</span>
+                      <span class="line">Translations in 14 languges</span>
+                      <span class="line">Remember window size after app closes</span>
+                      <span class="line">Many bugfixes</span>
+                      <span class="line">and more 🚀</span>
+
+                      <br>
+
+                      <span>Thank you all for your patience.
+                        Everyone who has ever purchased the app (850+ people) will receive a download link
+                        in their email shortly.
+                      </span>
+
+                      <br><br>
+
+                      <small>Windows v2.0.0 Demo MD5: soon</small>
+                      <br>
+                      <small>Mac v2.0.0 Demo MD5: soon</small>
+                      <br>
+                      <small>Linux v2.0.0 Demo MD5: soon</small>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>September 23, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">Version 2.0.0 expected release</span>
+                      <br>
+                      <span class="line">Thank you all for your patience. Originally I wanted to release version 2 by September 1st,
+                        but I have to work on a time-sensitive charity-related project, so now I'm hoping to release version 2 by November 1st.
+                        There are no technical difficulties, I just need more time.
+                      </span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>August 26, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">800th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/MyNets.aspx?DonationID=513201">(receipt)</a></span>
+                      <br>
+                      <span class="line">Thank you to all who pay more than the minimum amount, it really encourages
+                        further work on the app.
+                        Version 2 will be out in less than 2 weeks. Everyone who has ever purchased <em>Video Hub App</em> will
+                        receive a download link!
+                      </span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>July 7, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">700th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/Fundraiser.aspx?FundraiserID=8035">(receipt)</a></span>
+                      <br>
+                      <span class="line">Thank you to all who pay more than the minimum amount, it really encourages
+                        further work on the app.
+                        Version 2 will be out in August. Everyone who has ever purchased <em>Video Hub App</em> will
+                        receive a download link!
+                      </span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>May 20, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">600th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/Fundraiser.aspx?FundraiserID=8035">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Mar 21, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">500th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/Fundraiser.aspx?FundraiserID=8035">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Jan 21, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">400th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/Fundraiser.aspx?FundraiserID=8035">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Dec 2, 2019</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">Video Hub App is now open source!</span>
+                      <br>
+                      <span class="line">If you're a developer and would like to contribute to the project or just see
+                        the code:
+                        <a href="https://github.com/whyboris/Video-Hub-App">GitHub</a>!
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>November 17, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">300th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/MyNets.aspx?DonationID=431274">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</a></span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>August 26, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">200th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/MyNets.aspx?DonationID=410422">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</a></span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>August 15, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">A <a href="future.html">roadmap</a> of future features posted.</span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>July 24, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">100th app purchase!</span>
+                      <br>
+                      <span class="line">$3.50 of every purchase goes to a <em>cost-effective</em> charity <a
+                          href="https://www.againstmalaria.com/MyNets.aspx?DonationID=395198">(receipt)</a></span>
+                      <br>
+                      <span class="line">Every purchase pays for in an insecticide-treated bednet that
+                        protects 2 people from malaria for 3-4 years!</a></span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>July 22, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">Added Video Hub App to ProductHunt: <a
+                          href="https://www.producthunt.com/posts/video-hub-app">please upvote</a></span>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>July 4, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">YouTube video for the app!</span>
+
+                      <br>
+
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/_KC9xrsiwZg?rel=0"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>May 27, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">Linux version is available!</span>
+
+                      <br>
+
+                      <small>Linux v1.3.0 Demo MD5: df62c2e52735d152819a159daca70b83</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>May 14, 2018</h2>
+                      <h5 class="soon">v1.3.0</h5>
+
+                      <span class="head">Features:</span>
+                      <span class="line">Auto tagging</span>
+                      <span class="line">Manual tagging</span>
+
+                      <br>
+
+                      <small>Windows v1.3.0 Demo MD5: b64e8a080da12288c5ac6b5c3582b978</small>
+                      <br>
+                      <small>Mac v1.3.0 Demo MD5: bda864fd90a3e2aab02a820d48cd09a2</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Apr 24, 2018</h2>
+                      <h5 class="soon">v1.2.0</h5>
+
+                      <span class="head">Features:</span>
+                      <span class="line">Rename file</span>
+                      <span class="line">Show similar</span>
+
+                      <br>
+
+                      <small>Windows v1.2.0 Demo MD5: 76bbdc52b5bcaf8b034e05435bb8fdcd</small>
+                      <br>
+                      <small>Mac v1.2.0 Demo MD5: a4b959ae0ac3d8fa7980e1287a5c7c4f</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Apr 8, 2018</h2>
+                      <h5 class="soon">v1.1.0</h5>
+
+                      <span class="head">Features:</span>
+                      <span class="line">Resolution filter</span>
+                      <span class="line">Resize app user interface</span>
+
+                      <br>
+
+                      <span class="head">Bugfixes:</span>
+                      <span class="line">Rescan folder works</span>
+                      <span class="line">Save settings on exit</span>
+                      <span class="line">Remove screenshots for videos no longer in library</span>
+
+                      <br>
+
+                      <small>Windows v1.1.0 Demo MD5: fc92d2a56ee7b3f04a854e00d2980a53</small>
+                      <br>
+                      <small>Mac v1.1.0 Demo MD5: 5c1ef5787b275cc2f15fe7c08eb53766</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <ul class="fh5co-faq-list">
+                    <li class="animate-box">
+                      <h2>Feb 20, 2018</h2>
+                      <h5 class="soon">v1.0.0</h5>
+                      <p>Initial release.</p>
+                      <p>Windows and Mac versions released as demo. App is now available for purchase.</p>
+                      <small>Windows v1.0.0 Demo MD5: 4b00b9a3cb01ed7e0e374417bd4c81e7</small>
+                      <br>
+                      <small>Mac v1.0.0 Demo MD5: b79e8231d7bb8ca3a4c5d9f75afbfa4a</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<sergey-import src="footer" />
+
+        </div>
+
+      </div><!-- /main -->
+
+    </div><!-- wrapper -->
+
+    <nav class="outer-nav right vertical">
+      <a href="index.html" class="my-icon-home">Home</a>
+      <a href="download.html" class="my-icon-download">Download</a>
+      <a href="share.html" class="my-icon-heart">Share</a>
+      <a href="javascript:document.getElementById('clickHack').click()" class="current-page my-icon-news">Blog</a>
+      <a href="faq.html" class="my-icon-star">FAQ</a>
+      <a href="about.html" class="my-icon-info-large">About</a>
+      <a href="contact.html" class="my-icon-mail">Contact</a>
+<sergey-import src="navigationShare" />
+    </nav>
+
+  </div><!-- /perspective -->
+
+
+<sergey-import src="bottomJS" />
+
+
+</body>
+
+</html>

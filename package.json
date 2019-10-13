@@ -1,0 +1,16 @@
+{
+  "name": "video-hub-app-public-website",
+  "version": "2.0.0",
+  "description": "Public website for Video Hub App 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "sergey",
+    "dev": "sergey --watch"
+  },
+  "keywords": [],
+  "author": "Boris Yakubchik",
+  "license": "ISC",
+  "dependencies": {
+    "sergey": "0.0.9"
+  }
+}

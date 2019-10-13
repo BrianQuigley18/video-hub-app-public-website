@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+<sergey-import src="ga" />
+
+<title>Video Hub App 2 - Browse, search, organize, and preview your videos</title>
+
+<sergey-import src="socialMeta" />
+
+<sergey-import src="favicon" />
+
+<sergey-import src="cssImports" />
+
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Magnific Popup - for clicking on video on homepage -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<sergey-import src="modernizr" />
+
+  <style>
+    h3 {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="vh-logo" style="
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    "
+  >
+    <img src="images/logo.png" style="width: 10vw">
+  </div>
+
+  <button id="showMenu" class="hamburger hamburger--arrow-r" style="
+      background-color: white;
+      border-radius: 33px;
+      border: 0;
+      outline: none;
+      padding: 20px 12px 11px;
+      position: fixed;
+      right: 16px;
+      top: 16px;
+      z-index: 11;
+    ">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+
+  <div id="perspective" class="perspective effect-moveleft">
+
+    <div class="containerNAV">
+
+      <div class="wrapper" id="clickHack">
+
+        <div class="fh5co-loader"></div>
+
+        <div id="fh5co-page">
+          <section id="fh5co-header">
+
+            <a href="download.html" class="btn btn-primary"
+              style="position: absolute; top: 50px; left: calc(50% - 65px);">DOWNLOAD</a>
+
+            <h1 id="fh5co-logo" style="
+              padding-left: 10vw;
+              padding-right: 5vw;
+              font-size: 10vw;
+              color: white;
+              top: 20vh;
+              text-shadow: 0px 2px 8px rgba(0,0,0,0.5)
+            ">Video Hub App 2</h1>
+
+            <h1 id="fh5co-logo" style="
+              padding-left: 10vw;
+              padding-right: 5vw;
+              font-size: 5vw;
+              color: white;
+              top: 40vh;
+              text-shadow: 0px 2px 8px rgba(0,0,0,0.5)
+            ">The fastest way to browse and manage videos on your computer</h1>
+
+          </section>
+          <!-- #fh5co-header -->
+
+          <section id="fh5co-hero" class="js-fullheight" style="
+            background-image: url(images/desktopsplash.jpg);
+            background-position: 50%;
+            background-size: cover;
+            background-attachment:scroll;
+            height: calc(100vh - 60px);
+          " data-next="yes">
+            <div class="fh5co-overlay"></div>
+            <div class="fh5co-learn-more animate-box">
+              <a href="#" class="scroll-btn">
+                <span class="arrow"><i class="icon-chevron-down"></i></span>
+              </a>
+            </div>
+          </section>
+          <!-- END #fh5co-hero -->
+
+
+          <section id="fh5co-projects">
+            <div class="container">
+              <div class="row row-bottom-padded-md">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <h2 class="fh5co-lead animate-box">Video Hub App 2</h2>
+                  <p class="fh5co-sub-lead animate-box" style="margin-bottom: 0px">Think of it like <em>YouTube</em> for
+                    videos on your computer:</p>
+                  <p class="fh5co-sub-lead animate-box">browse, search, and preview your videos</p>
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/1.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/1.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/1.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Scrub video</h2>
+                      <p>Preview on mouse hover</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/2.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/2.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/2.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Filmstrip</h2>
+                      <p>See your video as a filmstrip</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/3.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/3.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/3.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Thumbnails</h2>
+                      <p>Resizable from small to large</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/4.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/4.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/4.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Search filters</h2>
+                      <p>Advanced and live search</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/5.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/5.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/5.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Customize</h2>
+                      <p>Hide panels you don't use</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+                  <a href="images/6.jpg" class="fh5co-project-item image-popup">
+                    <video muted src="videos/6.mp4" class="img-responsive" loop autoplay>
+                      <img src="images/6.jpg">
+                    </video>
+                    <div class="fh5co-text">
+                      <h2>Many hubs</h2>
+                      <p>Easily switch hubs</p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- END #fh5co-projects -->
+
+
+          <section id="fh5co-features-2">
+            <div class="container">
+              <div class="col-md-6 col-md-pull-8">
+                <figure class="fh5co-feature-image animate-box">
+                  <img src="images/wizard.png" alt="wizard">
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <span class="fh5co-label animate-box">Easy to use</span>
+                <h2 class="fh5co-lead animate-box">How to use</h2>
+                <div class="fh5co-feature animate-box">
+                  <div class="fh5co-icon"><i>1</i></div>
+                  <div class="fh5co-text">
+                    <h3>Select</h3>
+                    <p>Choose a folder with your videos from your computer or external hard drive.</p>
+                  </div>
+                </div>
+                <div class="fh5co-feature animate-box">
+                  <div class="fh5co-icon"><i>2</i></div>
+                  <div class="fh5co-text">
+                    <h3>Click</h3>
+                    <p>Choose how many screenshots you would like to extract
+                      from every video and select the location where to store them.</p>
+                  </div>
+                </div>
+                <div class="fh5co-feature animate-box">
+                  <div class="fh5co-icon"><i>3</i></div>
+                  <div class="fh5co-text">
+                    <h3>Done</h3>
+                    <p>Now you can browse and search your videos in Video Hub App 2.
+                      Clicking on any video will play the file with your system's default video player.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- END #fh5co-features-3 -->
+
+
+          <section id="fh5co-features">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+                  <div class="fh5co-feature">
+                    <div class="fh5co-icon">
+                      <i class="icon-power"></i>
+                    </div>
+                    <h3>Instant preview</h3>
+                    <p>See inside your videos without opening them: just hover with your mouse</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+                  <div class="fh5co-feature">
+                    <div class="fh5co-icon">
+                      <i class="icon-search"></i>
+                    </div>
+                    <h3>Most-advanced search</h3>
+                    <p>Search by any combination of folders, files, and manual tags (inclusive and exclusive)</p>
+                  </div>
+                </div>
+
+                <div class="clearfix visible-sm-block"></div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+                  <div class="fh5co-feature">
+                    <div class="fh5co-icon">
+                      <i class="icon-toggle"></i>
+                    </div>
+                    <h3>Customizable</h3>
+                    <p>Customize the interface to your liking: hiding icons or panels you don't use</p>
+                  </div>
+                </div>
+
+                <div class="clearfix visible-sm-block"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- END #fh5co-features -->
+
+
+          <section id="fh5co-features-2">
+            <div class="container">
+              <div class="col-md-6 col-md-push-6">
+                <figure class="fh5co-feature-image animate-box">
+                  <video muted src="videos/full.mp4" loop autoplay>
+                    <img src="images/1.jpg">
+                  </video>
+                </figure>
+              </div>
+              <div class="col-md-6 col-md-pull-6">
+                <h2 class="fh5co-lead animate-box">Superb Features</h2>
+
+                <div class="fh5co-feature">
+                  <div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+                  <div class="fh5co-text animate-box">
+                    <h3>Find quickly</h3>
+                    <p>Search with any combination of the 6 available filters, including live search.</p>
+                  </div>
+                </div>
+
+                <div class="fh5co-feature">
+                  <div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+                  <div class="fh5co-text animate-box">
+                    <h3>See instantly</h3>
+                    <p>Hover over a thumbnail to see frames from your video or see your videos in filmstrip view.</p>
+                  </div>
+                </div>
+
+                <div class="fh5co-feature">
+                  <div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+                  <div class="fh5co-text animate-box">
+                    <h3>Customizable</h3>
+                    <p>Hide any buttons or panels you don't use, toggle the dark mode, or change how the buttons look.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="fh5co-feature">
+                  <div class="fh5co-icon animate-box">
+                    <i class="icon-check2"></i>
+                  </div>
+                  <div class="fh5co-text animate-box">
+                    <h3>Keyboard shortcuts</h3>
+                    <p>Quickly focus on the search bar or toggle most-used settings.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- END #fh5co-features-2 -->
+
+
+          <section id="fh5co-features">
+            <div class="container">
+              <div class="row text-center row-bottom-padded-md">
+                <div class="col-md-8 col-md-offset-2">
+                  <figure class="fh5co-devices animate-box">
+                    <img src="images/all-desktops.png" alt="works on Windows, Mac, and Linux" class="img-responsive">
+                  </figure>
+                  <h2 class="fh5co-lead animate-box">Windows / Mac / Linux</h2>
+                  <p class="fh5co-sub-lead animate-box">Works the same way no matter what OS you use</p>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="fh5co-lead animate-box">
+                    <a href="download.html" class="btn btn-primary btn-cta">DOWNLOAD</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+<sergey-import src="footer">
+
+  <div style="transform: translate(4px, -4px)" class="fb-share-button"
+    data-href="http://videohubapp.com" data-layout="button" data-size="large" data-mobile-iframe="true">
+    <a target="_blank"
+      href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvideohubapp.com%2F&amp;src=sdkpreparse"
+      class="fb-xfbml-parse-ignore">Share</a>
+  </div>
+
+  <div style="transform: translate(4px, -4px)" class="fb-like"
+    data-href="https://www.facebook.com/videohubapp/" data-layout="button" data-action="like"
+    data-size="small" data-show-faces="true" data-share="false">
+  </div>
+
+</sergey-import>
+
+        </div>
+
+      </div><!-- /main -->
+
+    </div><!-- wrapper -->
+
+    <nav class="outer-nav right vertical">
+      <a href="javascript:document.getElementById('clickHack').click()" class="current-page my-icon-home">Home</a>
+      <a href="download.html" class="my-icon-download">Download</a>
+      <a href="share.html" class="my-icon-heart">Share</a>
+      <a href="blog.html" class="my-icon-news">Blog</a>
+      <a href="faq.html" class="my-icon-star">FAQ</a>
+      <a href="about.html" class="my-icon-info-large">About</a>
+      <a href="contact.html" class="my-icon-mail">Contact</a>
+<sergey-import src="navigationShare" />
+    </nav>
+
+  </div><!-- /perspective -->
+
+
+  </div>
+  <!-- END #fh5co-page -->
+
+
+<sergey-import src="bottomJS" />
+
+
+</body>
+
+</html>
+
+</html>
