@@ -4,7 +4,11 @@
 
 ![Video Hub App](https://videohubapp.com/images/4.jpg)
 
-### This repository
+## News
+
+This repository and website has been superseded by [Video Hub App Gatsby Website](https://github.com/whyboris/video-hub-app-gatsby-website)
+
+## This repository
 
 This is a repository just to keep a safe copy of the current public website.
 
